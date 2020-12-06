@@ -9,7 +9,7 @@ html,body{
 #navbar{
     background-color:#1166ee;
     width: 100%;
-    height: 8%;
+    height: 10%;
     margin-top: 20px;
     display: flex;
     align-self:center;
@@ -41,7 +41,7 @@ background-color:#1166ee;
 #navbar__searchBar{
     background-color: white;
     flex-grow: 2;
-    height: 50%;
+    height: 70%;
     margin-right: 1vmin !important;
     display: flex;
     flex-direction: row;
