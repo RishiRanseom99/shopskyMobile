@@ -3,10 +3,10 @@ function isMobile(){
     console.log("inside function");
     
     if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        user.innerText="web";
+        user.innerText="mobile";
     
    }
    else{
-    user.innerText="mobile";
+    user.innerText="web";
    }
 } 
