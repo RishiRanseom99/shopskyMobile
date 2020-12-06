@@ -50,7 +50,7 @@ background-color:#1166ee;
     
 }
 #navbar__searchIcon{
-    font-size: 4.5vmin;
+    font-size: 5vmin;
     margin: 1vmin !important;
     color: grey;
 
@@ -59,7 +59,7 @@ background-color:#1166ee;
     flex-grow: 1;
     height: 80%;
     border:none;
-    font-size: medium;
+    font-size: large;
 
 }
 #navbar__cartIcon{
