@@ -1,0 +1,188 @@
+
+body{
+    margin:0px;
+    padding:0px;
+}
+
+
+/* 
+---------------------------------------  Navbar start -------------------------------------------------------------------------------------------------
+
+*/
+#navbar {
+    background-color: #1166ee;
+    width: 100%;
+    height: 14.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* margin-bottom: 1vmin !important; */
+    
+  }
+  #navbar__row1 {
+    width:100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+  #navbar__menu {
+    font-size: 8vmin;
+    color: white;
+    flex-grow: 0.5;
+    margin-left: 1vmin !important;
+  }
+  #navbar__logo {
+    flex-grow: 3;
+    color: white;
+    font-size: 7vmin;
+    font-weight: 540;
+  }
+  #navbar__cartIcon {
+    font-size: 6vmin;
+    flex-grow: 0.1;
+    color: white;
+  }
+  #navbar__row2{
+      width:100%;
+      height:50%;
+  }
+  #navbar__row2_content {
+    background-color: white;
+    width: 98%;
+    height: 12vmin;
+    margin-left: 1vmin !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #navbar__searchIcon {
+    font-size: 6vmin;
+    margin: 1vmin !important;
+    color: rgb(155, 153, 153);
+  }
+  #navbar__input {
+    flex-grow: 3;
+    font-size: 18px;
+    border: none;
+  }
+  #navbar__input:focus {
+    outline: 0;
+  }
+  
+  /* 
+  ---------------------------------------  Navbar END   -------------------------------------------------------------------------
+  */
+
+
+  /* 
+  Sort And filter start
+  */
+.sort__filter{
+    width:100%;
+    height: 7vh;
+    display: inline-flex;
+    background-color: #EAEDED;
+}
+.sort__filter i{
+    font-size: 20px;
+    margin-right: 7px;
+    color: rgb(5, 5, 5);
+}
+.sort__filter p{
+    margin-top: 9px;
+    font-size:18px;
+
+}
+.sort{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgb(207, 201, 201);
+    /* background-color: chartreuse; */
+}
+.filter{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: chocolate; */
+}
+
+
+  /* 
+  Sort And filter end
+  */
+
+
+
+  /* -----------------Products start------------------------------ */
+
+.products{
+    width:100%;
+    height:max-content;
+}
+.products__row{
+    width:100%;
+    height:39vh;
+    display: flex;
+    flex-direction: row;
+    /* background-color: cornsilk; */
+}
+.col1{
+    /* flex-grow: 1; */
+    width: 50%;
+    border-right: 1px solid rgb(228, 225, 225);
+    border-bottom: 1px solid rgb(228, 225, 225);
+    /* background-color: crimson; */
+    /* overflow: hidden; */
+}
+.col2{
+    /* flex-grow: 1; */
+    width: 50%;
+    border-bottom: 1px solid rgb(228, 225, 225);
+    /* border: 1px solid grey; */
+    /* background-color: darkcyan; */
+    /* overflow: hidden; */
+}
+.products__item__image{
+    height: 80%;
+    width:100%;
+    /* background-color: darkolivegreen; */
+}
+.products__item__image img{
+    width: 100%;
+    height: 100%;
+    padding:5px;
+}
+.products__item__description{
+    height:20%;
+    width:100;
+    text-align: center;
+    /* background-color: darkslategray; */
+}
+.products__item__title{
+    height: 50%;
+    width: 100%;
+    /* background-color: ivory; */
+
+}
+.products__item__price{
+    height: 50%;
+    width:100%;
+    /* background-color: khaki; */
+
+}
+
+
+
+
+
+
+
+   /*------------------------------- Products end--------------------------------------------- */
