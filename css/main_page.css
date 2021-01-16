@@ -1,0 +1,589 @@
+* {
+  margin: 0 !important ;
+  padding: 0 !important ;
+  outline: 0;
+}
+html,
+body {
+  height: 100%;
+}
+
+/* 
+---------------------------------------  Navbar start -------------------------------------------------------------------------------------------------
+
+*/
+#navbar {
+  background-color: #1166ee;
+  width: 100%;
+  height: 14%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 1vmin !important;
+  
+}
+#navbar__row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+}
+#navbar__menu {
+  font-size: 8vmin;
+  color: white;
+  flex-grow: 0.5;
+  margin-left: 1vmin !important;
+}
+#navbar__logo {
+  flex-grow: 3;
+  color: white;
+  font-size: 7vmin;
+  font-weight: 540;
+}
+#navbar__cartIcon {
+  font-size: 6vmin;
+  flex-grow: 0.1;
+  color: white;
+}
+
+#navbar__row2_content {
+  background-color: white;
+  width: 98%;
+  height: 12vmin;
+  margin-left: 1vmin !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#navbar__searchIcon {
+  font-size: 6vmin;
+  margin: 1vmin !important;
+  color: rgb(155, 153, 153);
+}
+#navbar__input {
+  flex-grow: 3;
+  font-size: 18px;
+  border: none;
+}
+#navbar__input:focus {
+  outline: 0;
+}
+
+/* 
+---------------------------------------  Navbar END   -------------------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------- Category Starts  -------------------------------------------------------------------------
+*/
+
+#category{
+    margin-top: 1vmin !important;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    
+}
+.category__items{
+    /* border: 2px solid black; */
+    margin-right: 1vmin !important;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+.avatar {
+    vertical-align: middle;
+    background-color:white;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgb(202, 200, 200);
+    border-radius: 50%;
+    
+}
+    
+.category__tag{
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+}
+/* 
+--------------------------------------- Category End  -------------------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------- Slider start  -------------------------------------------------------------------------
+*/
+#slideshow{
+  
+  display: flex;
+  
+  align-items: center;
+  width: 100%;
+  height: 30%;
+ 
+  background-color: rgb(226, 222, 222);
+  margin-bottom: 1vmin !important;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  height: 97%;
+  overflow-y: hidden;
+  
+  margin: auto;
+  
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.slideshow-images{
+  max-width: 100%;
+  min-height: 195px;
+  
+  object-fit: fill;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.dots{
+  position: absolute;
+  top: 90%;
+  width: 100%;
+  text-align: center;
+  font-size: 8px;
+  /* border: 2px solid yellowgreen; */
+}
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+ border: 1px solid black;
+  /* background-color: rgb(253, 250, 250); */
+  border-radius: 29%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  /* 
+--------------------------------------- slider End  -------------------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------- 4 item card start -------------------------------------------------------------------------
+*/
+
+
+.card{
+
+  width: 100%;
+  height: 55%;
+  /* border: 1px solid black; */
+  background: linear-gradient(to bottom, whitesmoke 79%, #33ccff 116%);
+  /* background: linear-gradient(to bottom, #33ccff 34%, #ff99cc 62%); */
+  /* margin-bottom: 2vmin !important; */
+}
+  
+
+.card4-title{
+  width: 100%;
+  height: 12%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+}
+.card-title-text{
+  flex-grow: 2;
+  text-align: center;
+  color: rgb(15, 15, 15);
+  /* text-shadow: 3px 3px 3px  #33ccff; */
+  font-size: 5vmin;
+  font-weight: bold;
+  overflow: hidden;
+
+}
+/* .card-title-text>p
+{
+  text-shadow: 3px 3px 3px  #33ccff;
+} */
+.card-title-discount>span{
+  
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  font-weight: bold;
+
+}
+
+
+.card-items{
+  width: 100%;
+  height: 85%;
+  
+}
+
+.card-row1 {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  
+  
+}
+.card-row2{
+ 
+  flex-grow: 1;
+  position: relative;
+  height: 50%;
+  
+}
+
+.card-col1{
+ width:48%;
+ height: 100%;
+ left: 1%;
+ position:absolute;
+ 
+ 
+}
+.card-col2{
+ 
+  width: 48%;
+  height: 100%;
+  left: 51%;
+  position:absolute;
+}
+.content{
+  width: 100%;
+  height: 90%;
+}
+/* 
+.card-col1 .content{
+  width: 100%;
+  height: 90%;
+}
+.card-col2 .content{
+  width: 100%;
+  height: 90%;
+} */
+.tiles{
+  width: 100%;
+  height: 90%;
+  border-radius: 8px;
+}
+.tiles-text{
+  width: 100%;
+  height:10%;
+
+}
+/* #card-border{
+  width: 100%;
+  height: 2%;
+  background-color: #ebe1e6;
+} */
+
+/* 
+--------------------------------------- 4 item card End  -------------------------------------------------------------------------
+*/
+
+/* 
+--------------------------------------- 2item card start  -------------------------------------------------------------------------
+*/
+
+.card2{
+
+  width: 100%;
+  height: 40%;
+  /* border: 2px solid red; */
+  background: linear-gradient(to bottom, whitesmoke 79%, #660066 116%);
+  /* background: linear-gradient(to bottom right, #339966 7%, #ccffcc 115%); */
+  /* margin-bottom: 2vmin !important; */
+}
+
+.card21-title{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+ 
+  /* border: 2px solid black; */
+
+}
+/* .card21-title-text{
+  flex-grow: 2;
+  text-align: center;
+  color: rgb(7, 7, 7);
+  text-shadow: 3px 3px 3px #db4edb;
+  font-size: 5vmin;
+  font-weight: bold;
+  overflow: hidden;
+
+}
+.card21-title-discount>span{
+  
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  font-weight: bold;
+
+} */
+
+.card2-items{
+  width: 100%;
+  height: 85%;
+  /* border: 2px solid black; */
+  
+}
+.card2-row{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.card2-col1{
+  width:48%;
+  height: 100%;
+  left: 1%;
+  position:absolute;
+  
+ }
+ .card2-col2{
+  
+   width: 48%;
+   height: 100%;
+   left: 51%;
+   position:absolute;
+ }
+ /* .card2-col1 .card2-content{
+  width: 100%;
+  height: 90%;
+}
+.card2-col2 .card2-content{
+  width: 100%;
+  height: 90%;
+} */
+/* .card2-tiles{
+  width: 100%;
+  height: 90%;
+  border-radius: 8px;
+}
+.card2-tiles-text{
+  width: 100%;
+  height:10%;
+
+} */
+/* .card2-border{
+  width: 100%;
+  height: 2%;
+  background-color: #ebe1e6;
+} */
+/* 
+--------------------------------------- 2item card End  -------------------------------------------------------------------------
+*/
+
+
+/* 
+--------------------------------------- 1item card start  -------------------------------------------------------------------------
+*/
+
+.card3{
+
+  width: 100%;
+  height: 40%;
+  /* border: 2px solid red; */
+  background: linear-gradient(to bottom, whitesmoke 79%, #993333 116%);
+  /* background: linear-gradient(to top right, #663300 -3%, #ffffff 116%); */
+  /* margin-bottom: 2vmin !important; */
+}
+/* 
+.card3-title{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
+ 
+  
+
+}
+.card3-title-text{
+  flex-grow: 2;
+  text-align: center;
+  color: rgb(24, 23, 23);
+  text-shadow: 3px 3px 3px  #993333;
+  font-size: 5vmin;
+  font-weight: bold;
+  overflow: hidden;
+
+}
+.card3-title-discount>span{
+  
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  font-weight: bold;
+
+} */
+
+.card3-items{
+  width: 100%;
+  height: 85%;
+  /* border: 2px solid black; */
+  /* display: block; */
+  
+  
+}
+.card3-row{
+  width: 90%;
+  height: 100%;
+  margin: auto !important;
+  text-align: center;
+ 
+}
+
+
+ /* .card3-content{
+  width: 100%;
+  height: 90%;
+  
+}  */
+/* .card3-tiles{
+  width: 100%;
+  height: 90%;
+  border-radius: 8px;
+}
+.card3-tiles-text{
+  width: 100%;
+  height:10%;
+
+} */
+/* .card3-border{
+  width: 100%;
+  height: 2%;
+  background-color: #ebe1e6;
+} */
+/* 
+--------------------------------------- 1item card End  -------------------------------------------------------------------------
+*/
+
+/* 
+----------------------------card slider start----------------------------------------------------------------------------------------------   
+*/
+.banner__slider{
+  width:100%;
+  height:70vh;
+  background-color: beige;
+
+}
+.banner__slider__title{
+  width:100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  background-color: blue;
+}
+.banner__slider__body{
+  height:85%;
+  background-color: blueviolet;
+  
+  /* margin-top: 20px; */
+}
+
+
+
+.carousel{
+  height:100%;
+  background-color: #660066;
+  
+ 
+  
+}
+.carousel-cell{
+  width:70%;
+  height: 99%;
+  /* border-radius: 20px; */
+  text-align: center;
+  background-color: aqua;
+  margin-right: 10px !important;
+  /* margin-top: 20px; */
+ 
+}
+.carousel-cell>img{
+  width:100%;
+  height: 90%;
+
+}
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+/* disabling buttons */
+.flickity-button:disabled {
+  display: none;
+}
+/* disabling page dots */
+.flickity-page-dots{
+  display: none;
+}
+
+/* 
+-----------------------------card slider end-------------------------------------------------------------------------------------------------
+*/

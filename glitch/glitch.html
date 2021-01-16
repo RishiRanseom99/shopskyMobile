@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    
+    <script src="https://kit.fontawesome.com/97f2b4d15f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Shopsky mobile</title>
+    <link rel="stylesheet" href="./main_page.css">
+</head>
+<body>
+     <!-----------navbar start ------------------------------------------------------------------------------------->
+    
+       <div id="navbar">
+           <div id="navbar__row1">
+                <i id="navbar__menu" class="fas fa-bars"></i>
+                <p id="navbar__logo">Shopsky</p>
+                <i id="navbar__cartIcon" class="fas fa-shopping-cart"></i>
+
+           </div>
+           <div id="navbar__row2">
+                <div id="navbar__row2_content">
+                    <i id="navbar__searchIcon" class="fas fa-search"></i>
+                    <form>
+                    <input id="navbar__input" type="text" placeholder="Search for Products"/>
+                    </form>
+                </div>
+            </div>
+           
+        </div>
+    <!---------- navbar end ---------------------------------------------------------------------------------->
+
+    <!-- ------------------------category display start--------------------------------------------------------------------->
+
+    <div id="category">
+        <div class="category__items" id="category1">
+            <img class="avatar" src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Felectronics.jpeg?v=1607301821093"  />
+            <p class="category__tag">Electronics</p>
+
+        </div>
+        <div class="category__items" id="category1">
+            <img class="avatar" src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Ffashion.jpeg?v=1607301818493"  />
+            <p class="category__tag">Fashion</p>
+
+        </div>
+        <div class="category__items" id="category1">
+            <img class="avatar" src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Faccessories.jpeg?v=1607301794250"  />
+            <p class="category__tag">Accessories</p>
+
+        </div>
+        <div class="category__items" id="category1">
+            <img class="avatar" src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fbooks.jpeg?v=1607301801115"  />
+            <p class="category__tag">Books</p>
+
+        </div>
+        <div class="category__items" id="category1">
+            <img class="avatar" src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fsports.jpeg?v=1607301842870"  />
+            <p class="category__tag">Sports</p>
+
+        </div>
+        <div class="category__items" id="category1">
+            <img class="avatar" src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Felectronics.jpeg?v=1607301821093"  />
+            <p class="category__tag">Furniture</p>
+
+        </div>
+        <div class="category__items" id="category1">
+            <img class="avatar" src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fhealthcare.jpeg?v=1607301837716"  />
+            <p class="category__tag">Healthcare</p>
+
+        </div>
+        <div class="category__items" id="category1">
+            <img class="avatar" src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fgrocery.jpeg?v=1607301832809" />
+            <p class="category__tag">Food</p>
+
+        </div>
+        
+    </div>
+
+    <!-- ----------------------category display end -------------------------------------------------------->
+
+    <!-- ------------------------------------------------Slider Starts ---------------------------------------------------------->
+<div id="slideshow">
+    <div class="slideshow-container">
+
+        <!-- Full-width images  -->
+        <div class="mySlides fade">
+          
+          <img class="slideshow-images" src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fhealthcare.jpeg?v=1607301837716" >
+          <div style="text-align:center" class="dots">
+            <span class="dot"  onclick="currentSlide(1)"></span>
+            <span class="dot " onclick="currentSlide(2)"></span>
+            <span class="dot "  onclick="currentSlide(3)"></span>
+            <span class="dot " onclick="currentSlide(4)"></span>
+            <span class="dot"  onclick="currentSlide(5)"></span>
+          </div> 
+          
+          
+        </div>
+      
+        <div class="mySlides fade">
+          
+          <img class="slideshow-images" src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Faccessories.jpeg?v=1607301794250" >
+          <div style="text-align:center" class="dots">
+            <span class="dot "  onclick="currentSlide(1)"></span>
+            <span class="dot " onclick="currentSlide(2)"></span>
+            <span class="dot"  onclick="currentSlide(3)"></span>
+            <span class="dot " onclick="currentSlide(4)"></span>
+            <span class="dot"  onclick="currentSlide(5)"></span>
+          </div>  
+         
+        </div>
+      
+        <div class="mySlides fade">
+        
+          <img  class="slideshow-images"src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Ffashion.jpeg?v=1607301818493" >
+          <div style="text-align:center" class="dots">
+            <span class="dot"  onclick="currentSlide(1)"></span>
+            <span class="dot " onclick="currentSlide(2)"></span>
+            <span class="dot "  onclick="currentSlide(3)"></span>
+            <span class="dot " onclick="currentSlide(4)"></span>
+            <span class="dot"  onclick="currentSlide(5)"></span>
+          </div>  
+          
+        </div>
+
+        <div class="mySlides fade">
+            
+            <img  class="slideshow-images" src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fbooks.jpeg?v=1607301801115" >
+            <div style="text-align:center" class="dots">
+              <span class="dot"  onclick="currentSlide(1)"></span>
+              <span class="dot " onclick="currentSlide(2)"></span>
+              <span class="dot "  onclick="currentSlide(3)"></span>
+              <span class="dot " onclick="currentSlide(4)"></span>
+            <span class="dot"  onclick="currentSlide(5)"></span>
+            </div>  
+            
+          </div>
+
+          <div class="mySlides fade">
+            
+            <img class="slideshow-images" src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fsports.jpeg?v=1607301842870" >
+            <div style="text-align:center" class="dots">
+              <span class="dot"  onclick="currentSlide(1)"></span>
+              <span class="dot " onclick="currentSlide(2)"></span>
+              <span class="dot "  onclick="currentSlide(3)"></span>
+              <span class="dot " onclick="currentSlide(4)"></span>
+              <span class="dot"  onclick="currentSlide(5)"></span>
+            </div>  
+            
+          </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+      
+      
+      
+      
+</div>
+    <!-- ------------------------------------------------Slider End ------------------------------------------------------------------>
+
+    <!--  4item card  start-->
+    <div id="card">
+        <div class="card-title">
+            <div class="card-title-text"><p>Shopping for Womens and mens </p></div>
+            <div class="card-title-discount">
+                <span><i class="fas fa-tags"></i><p>&nbsp;5%</p></span>
+                
+            </div>
+            
+        </div>
+        <div class="card-items">
+            <div class="card-row1">
+                <div class="card-col1">
+                    <div class="content">
+                        <img class="tiles"  src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fhealthcare.jpeg?v=1607301837716" >
+                        <p class="tiles-text" >Electronics</p>
+
+                    </div>
+                </div>
+
+                <div class="card-col2">
+                    <div class="content">
+                        <img class="tiles"  src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fbooks.jpeg?v=1607301801115" >
+                        <p class="tiles-text" >Electronics</p>
+
+                    </div>
+                </div>
+    
+            </div>
+            <div class="card-row2">
+                <div class="card-col1">
+                    <div class="content">
+                        <img class="tiles"  src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fgrocery.jpeg?v=1607301832809" >
+                        <p class="tiles-text" >Electronics</p>
+
+                    </div>
+    
+                </div>
+                <div class="card-col2">
+                    <div class="content">
+                        <img class="tiles"  src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Ffashion.jpeg?v=1607301818493" >
+                        <p class="tiles-text" >Electronics</p>
+
+                    </div>
+    
+                </div>
+    
+            </div>
+
+        </div>
+        <div id="card-border">
+            </div>
+       
+    </div>
+
+
+
+
+
+    <!-- 4 item card end -->
+    <!-- ----------------------------2 item card  start-------------------------------------------->
+
+<div class="card2">
+    <div class="card2-title">
+        <div class="card2-title-text"><p>Shopping for Womens and mens </p></div>
+        <div class="card2-title-discount">
+            <span><i class="fas fa-tags"></i><p>&nbsp;10%</p></span>
+        </div>
+    </div>
+    <div class="card2-items">
+        <div class="card2-row">
+            <div class="card2-col1">
+                <div class="card2-content">
+                    <img class="card2-tiles"  src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fgrocery.jpeg?v=1607301832809" >
+                    <p class="card2-tiles-text" >Electronics</p>
+                </div>
+            </div>
+
+            <div class="card2-col2">
+                <div class="card2-content">
+                    <img class="card2-tiles"  src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fhealthcare.jpeg?v=1607301837716" >
+                    <p class="card2-tiles-text" >Electronics</p>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="card2-border">
+    </div>
+    
+</div>
+
+<!------------------------------- 2 item card end---------------------------------------- -->
+<!-- ------------------------------------------------1 item card  start-------------------------------------------->
+
+<div class="card3">
+    <div class="card3-title">
+        <div class="card3-title-text"><p>Shopping for Womens and mens </p></div>
+        <div class="card3-title-discount">
+            <span><i class="fas fa-tags"></i><p>&nbsp;20%</p></span>
+        </div>
+    </div>
+    <div class="card3-items">
+        <div class="card3-row">
+            
+                <div class="card3-content">
+                    <img class="card3-tiles"  src="https://cdn.glitch.com/7789973e-ee48-4380-87a8-3bde83f7025f%2Fhealthcare.jpeg?v=1607301837716" >
+                    <p class="card3-tiles-text" >Electronics</p>
+                </div>
+           
+        </div>
+    </div>
+    <div class="card3-border">
+    </div>
+    
+</div>
+
+
+
+<!---------------------------------------------------- 1 item card end---------------------------------------- -->
+
+    
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
